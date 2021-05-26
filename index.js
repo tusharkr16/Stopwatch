@@ -2,11 +2,13 @@ var hr = 00;
 var min = 00;
 var second = 00;
 var milli = 00;
+const isRunning = false;
 
 var t;
 
-let startimer = () => {
 
+let startimer = () => {
+    
     if (milli<=100){
         milli++;
         document.getElementById('milli').innerHTML = print(milli)
@@ -14,11 +16,11 @@ let startimer = () => {
         milli=0;
         second++;
         document.getElementById('milli').innerHTML = print(milli)
-
+        
     }
 
     if (second <= 59) {
-       
+        
         document.getElementById('sec').innerText = print(second)
     } else {
         second = 0;
@@ -30,24 +32,26 @@ let startimer = () => {
         min = 0;
         hr++;
         document.getElementById('hr').innerHTML =print(hr)
-
+        
     } if (hr <= 24) {
         document.getElementById('hr').innerHTML = print(hr)
     } else {
         stop();
     }
-
-
-
+    
+    
+    
 }
 
 let start = () => {
-    t = setInterval(startimer, 10)
+    t = setInterval(startimer, 10);
+    document.getElementById('start').disabled = true;
     
 }
 
 let pause = () => {
     clearInterval(t);
+    document.getElementById('start').disabled = false;
     
 }
 
@@ -62,7 +66,7 @@ let reset = () => {
     document.getElementById('sec').innerHTML='00'
     document.getElementById('milli').innerHTML='00'
     
-
+    
 }
 
 let print = (val) =>{
@@ -72,3 +76,6 @@ let print = (val) =>{
         return val;
     }
 }
+
+
+   
