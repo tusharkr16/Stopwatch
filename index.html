@@ -2,61 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-    <title>StopWatch</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+	<title>StopWatch</title>
 </head>
 
 <body>
-        <h1>STOPWATCH</h1>
-    
-    <table cellpadding=5>
-        <tr>
-            <td>
-                <h1 class="label" id="hr">00</h1>
-                <p>Hours</p>
-            </td>
+	<h1 class="mt-5">STOPWATCH</h1>
+	<div class="container mt-5 ">
+	<div class="interface">
 
-            <td>
-                <h1 class="label" id="min">00</h1>
-                <p>Minute</p>
-            </td>
+			<div class="float-start">
+				<span id="hr" class="label">00 
+				</span>
+					<br>HH
+			</div>
+			<div class="float-start">
+				<span>:</span> 
+			</div>
+			<div class="float-start">
+				<span id="min" class="label">00 
+				</span>
+					<br>MM
+			</div>
+			<div class="float-start">
+				<span>:</span>
+			</div>
+			<div class="float-start">
+				<span id="sec" class="label">00 
+				</span>
+					<br>SS
+			</div>
+			<div class="float-start">
+				<span>:</span>
+			</div>
+			<div class="float-start">
+				<span id="milli" class="label">00 
+				</span> 
+					<br>MS
+			</div>
+	</div>
 
-            <td>
-                <h1 class="label" id="sec">00</h1>
-                <p>Second</p>
-            </td>
 
-            <td>
-                <h1 class="label" id="milli">00 </h1>
-                <p>Millisecond</p>
-            </td>
+<!-- 
+		<span id="hr" class="label">00 </span>
+		<span>:</span> 
+		<span id="min" class="label">00 </span>
+		<span>:</span>
+		<span id="sec" class="label">00 </span>
+		<span>:</span>
+		<span id="milli" class="label">00 </span> <br> -->
+		<!-- <span>HH : MM : SS: MS</span> -->
 
-        </tr>
+		
+		<div class="row justify-content-center mt-5 ">
+			<div class="col-lg-2 col-sm-3 mb-2">
+				<button class="btn" id="start" onclick="start()">Start</button>
 
-        <tr>
-            <td>
-                <button class="btn" id="start" onclick="start()">Start</button>
-            </td>
+			</div>
 
-            <td>
-                <button class="btn" id="pause" onclick="pause()">Pause</button>
-            </td>
-            <td>
-                <button class="btn" id="reset" onclick="reset()">Reset</button>
+			<div class="col-lg-2 col-sm-3 mb-2">
+				<button class="btn" id="pause" onclick="pause()">Pause</button>
 
-            </td>
+			</div>
 
-        </tr>
-    </table>
+			<div class="col-lg-2 col-sm-3 mb-2 ">
+
+				<button class="btn" id="reset" onclick="reset()">Reset</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

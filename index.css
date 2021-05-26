@@ -1,48 +1,61 @@
-body{
-
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html, body{
+    margin: 0;
+    padding: 0;
     color: white;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
-table{
-    margin: 64px auto;
-    justify-content: center;
-    border: 32px solid black;
-    border-radius: 23px;
-}
 
+.container{
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-size: 6vw;
+    
+    
+    
+}
 
 .label{
-    
-    font-family: 'Roboto Mono';
-    font-size: 100px;
-    line-height: 100px;
-    margin: 5px;
-    width: 120px;
+    margin: auto;
+}
+
+.interface{
+    display: table;
+    margin: 0px auto;
+}
+
+.names{
+    margin: 20px;
+}
+
+.container1{
+    font-size: 35px;
 }
 
 h1{
     text-align: center;
-    margin-top: 30px;
     font-size: 45px;
 }
 
 p{
     margin-left: 38px;
 }
-td>button{
+.btn{
     width: 100px;
     padding: 5px;
     border: 1px solid grey;
     background-color: red;
     color: white;
     border-radius: 5px;
-    margin-left: 45px;
+    
     cursor: pointer;
 
 }
 
-td>button:hover{
+.btn:hover{
     background-color: green;
     color: white;
 }

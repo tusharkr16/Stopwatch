@@ -2,7 +2,7 @@ var hr = 00;
 var min = 00;
 var second = 00;
 var milli = 00;
-const isRunning = false;
+
 
 var t;
 
@@ -57,6 +57,7 @@ let pause = () => {
 
 let reset = () => {
     clearInterval(t);
+    document.getElementById('start').disabled = false;
     hr=0;
     min=0;
     second=0;
